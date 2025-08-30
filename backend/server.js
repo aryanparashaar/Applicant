@@ -17,7 +17,7 @@ const app = express();
 
 
 // CORS (lock to your client origin)
-app.use(cors({ origin: process.env.CLIENT_ORIGIN, credentials: true }));
+app.use(cors());
 
 
 // JSON parsing for non-multipart routes

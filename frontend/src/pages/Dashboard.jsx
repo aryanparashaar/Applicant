@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 import { fetchApplicants } from "../api";
-import { Button } from "@/components/ui/button"
 
 export default function Dashboard() {
   const [applicants, setApplicants] = useState([]);
@@ -21,18 +20,7 @@ export default function Dashboard() {
           <p>Experience: {app.experience}</p>
           <p>Pass Out Year: {app.passOutYear}</p>
           <p>Skills: {app.skills}</p>
-          <Button
-            asChild
-            className="mt-2"
-           >
-            <a
-             href={app.resumeUrl}
-             target="_blank"
-             rel="noreferrer"
-            >
-             View Resume
-           </a>
-        </Button>
+          <a href={app.resumeUrl} target="_blank" rel="noreferrer" className="text-blue-600 underline mt-2 inline-block" > View Resume </a>
         </div>
       ))}
     </div>

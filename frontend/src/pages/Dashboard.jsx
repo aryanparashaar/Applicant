@@ -20,14 +20,7 @@ export default function Dashboard() {
           <p>Experience: {app.experience}</p>
           <p>Pass Out Year: {app.passOutYear}</p>
           <p>Skills: {app.skills}</p>
-          <a
-  href={app.resumeUrl}
-  target="_blank"
-  rel="noreferrer"
-  className="bg-blue-600 text-white px-4 py-2 rounded-lg shadow hover:bg-blue-700 transition inline-block mt-2"
->
-  View Resume
-</a>
+         <a href={app.resumeUrl} target="_blank" rel="noreferrer" className="bg-blue-600 text-white px-4 py-2 rounded-lg shadow hover:bg-blue-700 transition inline-block mt-2" > View Resume </a>
         </div>
       ))}
     </div>
